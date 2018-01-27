@@ -6,8 +6,8 @@ body {
 }
 /* Create dark grey header with a white logo */
 header {
-   background-color: #2B2B2B;
-   height: 35px;
+   background-color: #2a6496;
+   height: 50px;
    width: 100%;
    opacity: .9;
    margin-bottom: 10px;
@@ -15,35 +15,27 @@ header {
 header h1.logo {
    margin: 0;
    font-size: 1.7em;
-   color: #fff;
+   line-height: 50px;
+   text-align: center;
+   color: #E0E0E0;
    text-transform: uppercase;
-   float: left;
-}
-header h1.logo:hover {
-   color: #fff;
-   text-decoration: none;
 }
 /*
-* Display navigation links inline
+* Navigation
 */
-.menu {
-   float: right;
-   margin-top: 8px;
+#NevadaOne{
+   display: flex;
+   font-size: 20px;
 }
-.menu li {
-   display: inline;
+#NevadaOne li a:hover{
+   color: #FF3333;
 }
-.menu li + li {
-   margin-left: 35px;
-}
-.menu li a {
-   color: #999;
-   text-decoration: none;
-}
+
 /* Center the body content */
 .container {
    width: 940px;
    margin: 0 auto;
+   display: flex;
 }
 div.jumbo {
    padding: 10px 0 30px 0;
@@ -65,4 +57,12 @@ h3 {
    text-align: center;
    letter-spacing: -1px;
    color: #999;
+}
+footer{
+   height: 200px;
+   margin: 0 auto;
+   margin-top: 10px;
+   width: 100%;
+   display: flex;
+   background-color: #2a6496;
 }
