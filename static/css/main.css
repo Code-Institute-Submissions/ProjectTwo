@@ -13,10 +13,8 @@ header {
    margin-bottom: 10px;
 }
 header h1.logo {
-   margin: 0;
-   font-size: 1.7em;
-   line-height: 50px;
    text-align: center;
+   font-size: 1.7em;
    color: #E0E0E0;
    text-transform: uppercase;
 }
@@ -24,7 +22,6 @@ header h1.logo {
 * Navigation
 */
 #NevadaOne{
-   display: flex;
    font-size: 20px;
 }
 #NevadaOne li a:hover{
@@ -35,14 +32,6 @@ header h1.logo {
 .container {
    width: 940px;
    margin: 0 auto;
-   display: flex;
-}
-div.jumbo {
-   padding: 10px 0 30px 0;
-   background-color: #eeeeee;
-   -webkit-border-radius: 6px;
-   -moz-border-radius: 6px;
-   border-radius: 6px;
 }
 h2 {
    font-size: 3em;
@@ -58,11 +47,97 @@ h3 {
    letter-spacing: -1px;
    color: #999;
 }
+/*Home page*/
+.well{
+    width: 940px;
+    margin: 0 auto;
+}
+.landmarkDiv{
+    height: 800px;
+}
+/*About page*/
+.aboutMe{
+    height: 800px;
+}
+/*Issues page*/
+
+/*Contact page*/
+#contact{
+    height: 800px;
+}
+/*Footer main css*/
 footer{
    height: 200px;
+   position: fixed;
+   left: 0;
+   bottom: 0;
    margin: 0 auto;
    margin-top: 10px;
    width: 100%;
-   display: flex;
    background-color: #2a6496;
+}
+/*Footer address*/
+address {
+    display: block;
+    font-style: italic;
+    color: white;
+}
+.footer h3 {
+	border-bottom: 1px solid #BAC1C8;
+	color: #E0E0E0;
+    text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.footer ul {
+	font-size: 13px;
+	list-style-type: none;
+    text-align: center;
+	margin-top: 10px;
+	color: #7F8C8D;
+}
+.footer a {
+	color: #78828D
+}
+/*Social buttons*/
+.social li {
+	background: none repeat scroll 0 0 #B5B5B5;
+	border: 2px solid #B5B5B5;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	margin: 0 8px 0 0;
+	padding: 0;
+	text-align: center;
+	width: 36px;
+	transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+}
+.social li:hover {
+	transform: scale(1.15) rotate(360deg);
+	-webkit-transform: scale(1.1) rotate(360deg);
+	-moz-transform: scale(1.1) rotate(360deg);
+	-ms-transform: scale(1.1) rotate(360deg);
+	-o-transform: scale(1.1) rotate(360deg);
+}
+.social li a {
+	color: #EDEFF1;
+}
+.social li:hover {
+	border: 2px solid #2c3e50;
+	background: #2c3e50;
+}
+.social li a i {
+	font-size: 16px;
+	margin: 0 0 0 5px;
+	color: #EDEFF1;
 }
