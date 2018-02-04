@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/graph.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 <header>
@@ -17,7 +19,7 @@
         <h1 class="logo">William Russell for Governor of Nevada</h1>
     </div>
 </header>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-light">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#NevadaOne"
@@ -30,13 +32,18 @@
             <a href="{{ url_for('home') }}" class="navbar-brand" id="nevadaBrand"><img
                     src="static/images/nevadaUSflag.jpg" width="150px" height="170px" alt="Brand"></a>
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right" id="NevadaOne">
             <ul class="nav navbar-nav">
-                <li><a href="{{ url_for('home') }}">Home<span class="sr-only">(current)</span></a></li>
+                <li class="active"><a href="{{ url_for('home') }}">Home<span class="sr-only">(current)</span></a></li>
                 <li><a href="{{ url_for('about') }}">About</a></li>
-                <li><a href="{{ url_for('issues') }}">Issues</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="{{ url_for('issues') }}">Issues
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ url_for('education') }}">Education</a></li>
+                        <li><a href="#">Coming Soon</a></li>
+                    </ul>
+                </li>
                 <li><a href="{{ url_for('contact') }}">Contact</a></li>
             </ul>
         </div>
@@ -50,7 +57,7 @@
     <div class="footer" id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                     <h3>Site Map</h3>
                     <ul>
                         <li><a href="{{ url_for('home') }}">Home</a></li>
@@ -59,7 +66,7 @@
                         <li><a href="{{ url_for('contact') }}">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                     <h3>Address</h3>
                     <address>
                         Box 111, Nevada<br>
@@ -68,25 +75,25 @@
                     <p class="pull-left"> Copyright © Footer. All right reserved. </p>
                     <p class="pull-left">Written by <a href="mailto:russellgwill@gmail.com">Will Russell</a></p>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <h3>Contact Info</h3>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <h3>Connect with William</h3>
                     <ul class="social">
                         <li><a href="#"> <i class=" fa fa-facebook">   </i> </a></li>
                         <li><a href="#"> <i class="fa fa-twitter">   </i> </a></li>
                         <li><a href="#"> <i class="fa fa-youtube">   </i> </a></li>
-                        <li><a href="#"><i class="fa fa-github">   </i> </a></li>
+                        <li><a href="#"><i class="fa fa-github"> </i> </a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-        <script src="{{ url_for('static', filename='lib/js/jquery.min.js') }}"></script>
-        <script src="{{ url_for('static', filename='lib/js/bootstrap.min/js') }}"></script>
-        <script src="{{ url_for('static', filename='lib/js/crossfilter.js') }}"></script>
-        <script src="{{ url_for('static', filename='lib/js/d3.js') }}"></script>
-        <script src="{{ url_for('static', filename='lib/js/dc.js') }}"></script>
-        <script src="{{ url_for('static', filename='lib/js/queue.js') }}"></script>
-        <script src="{{ url_for('static', filename='lib/js/keen.min.js') }}"></script>
-        <script src="{{ url_for('static', filename='js/graph.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/js/bootstrap.min/js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/js/crossfilter.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/js/d3.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/js/dc.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/js/queue.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/js/keen.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/graph.js') }}"></script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
+    <h2>Reach out to us and we'll be back in touch shortly.</h2><br>
     <form id="contact">
         <form class="form-inline">
             <div class="form-group">
@@ -15,17 +16,9 @@
                     <label for="Email">Email address</label>
                     <input type="email" class="form-control" id="Email" placeholder="Enter Email">
                 </div>
-                <textarea class="form-control" rows="3" placeholder="Enter information"></textarea>
-                <form class="form-inline"><br>
-                    <div class="form-group">
-                        <label class="sr-only" for="Amount">Amount</label>
-                        <div class="input-group">
-                            <div class="input-group-addon">$</div>
-                            <input type="text" class="form-control" id="Amount" placeholder="Amount">
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Transfer cash</button>
-                </form>
+                <textarea class="form-control" rows="3" placeholder="Enter information"></textarea><br>
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
             </form>
+        </form>
 
 {% endblock %}

@@ -1,0 +1,122 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="container">
+        <h2>Poor state funding for education</h2>
+        <p>School did not always come easy to William, but thanks to the perseverance of his mother, and the dedication
+            of his teachers, they finally named the problem – dyslexia. His dyslexia led him on a unique educational
+            journey, one of self-pace and self-discovery. It’s what he needed to help him learn and it’s shaped his
+            thinking today: William believes that every student in Nevada deserves the same opportunity to achieve
+            success.
+
+            As Governor, William is calling for the Nevada Promise, a new way of thinking about education as a lifelong
+            pursuit. He believes that our role begins when babies are still in the womb and it doesn’t end until we’ve
+            done all we can to prepare them for a quality job and successful career.</p>
+    </div><br>
+    <div class="application">
+        <div id="outer" class="container-fluid">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="row">
+                        <!-- Time Chart -->
+                        <div class="col-sm-8">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Number of Donations
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="time-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Time Chart -->
+
+                        <!-- Resources -->
+                        <div class="col-sm-6">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Resources Type
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="resource-type-row-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Resources -->
+
+                        <!-- funding Pie -->
+                        <div class="col-sm-6">
+                            <div class="chart-wrapper">
+                                <div class="chart-title">
+                                    Funding Status
+                                </div>
+                                <div class="chart-stage">
+                                    <div id="funding-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- funding Pie -->
+                    </div>
+                </div>
+
+                <!-- Poverty -->
+                <div class="col-sm-6">
+                    <div class="chart-wrapper">
+                        <div class="chart-title">
+                            Poverty Level
+                        </div>
+                        <div class="chart-stage">
+                            <div id="poverty-level-row-chart"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Poverty -->
+
+                <!-- menu select -->
+                <div class="col-sm-6">
+                    <div class="chart-wrapper">
+                        <div class="chart-title">
+                            Donation State
+                        </div>
+                        <div class="chart-stage">
+                            <div id="menu-select"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- menu select -->
+
+                <!-- Metric 1 -->
+                <div class="col-sm-4">
+                    <div class="chart-wrapper">
+                        <div class="chart-title">
+                            Total Number of Donations
+                        </div>
+                        <div class="chart-stage" style="background: #33CC99;
+            position: relative;
+            font-size: 29px;
+            color: white;
+            vertical-align: middle;
+            text-align: center;
+            padding-top: 12px;
+            padding-bottom: 0px;">
+                            <div id="number-projects-nd"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Metric 1 -->
+
+                <!-- Metric 2 -->
+                <div class="col-sm-2">
+                    <div class="chart-wrapper">
+                        <div class="chart-title">
+                            Total Donations in USD
+                        </div>
+                        <div class="chart-stage">
+                            <div id="total-donations-nd"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Metric 2 -->
+            </div>
+        </div>
+    </div>
+{% endblock %}
