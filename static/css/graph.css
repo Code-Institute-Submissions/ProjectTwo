@@ -1,11 +1,8 @@
-.application{
-    height: 1000px;
-}
-
+/*Total Number of Donations chart*/
 #number-projects-nd {
     font-size: 60px;
 }
-
+/*Total donations in USD chart*/
 #total-donations-nd {
     font-size: 60px;
 }
@@ -34,13 +31,13 @@
     position: relative;
     height: 60px;
     font-size: 29px;
-    color: white;
+    color: black;
     vertical-align: middle;
     text-align: center;
     padding-top: 12px;
     padding-bottom: 0px;
 }
-
+/*Donation State drop-down*/
 .dc-select-menu {
     background: #33CC99;
     width: 80%;

@@ -37,7 +37,6 @@ function makeGraphs(error, donorUSAProjects) {
         return d["funding_status"];
     });
 
-
     //Calculate metrics
     var numProjectsByDate = dateDim.group();
     var numProjectsByResourceType = resourceTypeDim.group();
@@ -89,7 +88,7 @@ function makeGraphs(error, donorUSAProjects) {
 
     timeChart
         .ordinalColors(["#C96A23"])
-        .width(1200)
+        .width(940)
         .height(300)
         .margins({top: 30, right: 50, bottom: 30, left: 50})
         .dimension(dateDim)

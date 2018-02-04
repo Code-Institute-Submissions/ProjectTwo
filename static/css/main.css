@@ -60,7 +60,16 @@ h3 {
     height: 800px;
 }
 /*Issues page*/
-
+.application{
+    height: 1400px;
+}
+.ed{
+    text-transform: uppercase;
+    color: #285e8e;
+}
+.edPara{
+    
+}
 /*Contact page*/
 #contact{
     height: 800px;
