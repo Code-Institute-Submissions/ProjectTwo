@@ -51,24 +51,79 @@ h3 {
 .well{
     width: 940px;
     margin: 0 auto;
+    text-align: center;
+}
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+.jumbotron:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+.text {
+    white-space: nowrap;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 .landmarkDiv{
     height: 800px;
+}
+.landmark{
+    cursor: pointer;
+}
+.img-thumbnail:hover{
+    transform: scale(.5);
+}
+
+.img-thumbnail:hover{
+    transition: transform .25s ease;
 }
 /*About page*/
 .aboutMe{
     height: 800px;
 }
+.img-circle:hover{
+    transform: scale(.5);
+}
+.img-circle:hover{
+    transition: transform .25s ease;
+}
 /*Issues page*/
 .application{
-    height: 1400px;
+    width: 100vw;
+    height: 100%;
+    position: relative;
+    margin-left: -180px;
+    margin-right: 10px;
+    margin-bottom: 220px;
+}
+.education{
+    background-color: #285e8e;
+    opacity: 0.8;
+    border-radius: 10px 10px 10px 10px;
+    padding: 20px;
 }
 .ed{
     text-transform: uppercase;
-    color: #285e8e;
+    color: #ffffff;
+    cursor: pointer;
 }
 .edPara{
-    
+    color: white;
 }
 /*Contact page*/
 #contact{

@@ -1,10 +1,39 @@
+/*chart wrapper*/
+.chart-wrapper{
+
+}
+
+/*Chart title css*/
+.chart-title{
+
+}
+/*resource-type-row-chart*/
+#resource-type-row-chart{
+
+}
+/*funding-chart*/
+#funding-chart{
+
+}
+/*poverty-level-row-chart*/
+#poverty-level-row-chart{
+
+}
 /*Total Number of Donations chart*/
 #number-projects-nd {
     font-size: 60px;
+    background-color: #428bca;
+    color: white;
+    border: solid black 2px;
+    margin: 5px 5px;
 }
 /*Total donations in USD chart*/
 #total-donations-nd {
     font-size: 60px;
+    background-color: #428bca;
+    color: white;
+    border: solid black 2px;
+    margin: 5px 5px;
 }
 
 .dc-chart g.row text {
@@ -36,6 +65,7 @@
     text-align: center;
     padding-top: 12px;
     padding-bottom: 0px;
+
 }
 /*Donation State drop-down*/
 .dc-select-menu {
