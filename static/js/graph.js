@@ -17,7 +17,7 @@ function makeGraphs(error, donorUSAProjects) {
     });
 
 
-    //Create a Crossfilter instance
+    //Create a Crossfilter
     var ndx = crossfilter(donorUSAProjects);
 
     //Define Dimensions
