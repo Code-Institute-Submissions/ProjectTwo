@@ -56,33 +56,37 @@ h3 {
 
 /*Home page*/
 .well {
-    width: 940px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     color: #285e8e;
     font-size: 20px;
 }
-.state{
+
+.state {
     background-color: #2a6496;
     color: white;
     margin: 0 auto;
     width: 940px;
     border-radius: 10px;
 }
-.stateP{
+
+.stateP {
     font-size: 15px;
     padding: 10px;
 }
-.stateLi{
+
+.stateLi {
     color: #4cae4c;
     font-size: 15px;
 }
 
-.landmarkDiv {
-    height: 800px;
+.stateLi li{
+    text-align: left;
+    font-size: 1.2em;
 }
 
-.landmark {
+img {
     cursor: pointer;
 }
 
@@ -95,10 +99,6 @@ h3 {
 }
 
 /*About page*/
-.aboutMe {
-    height: 800px;
-}
-
 .img-circle:hover {
     transform: scale(.5);
 }
@@ -133,14 +133,6 @@ h3 {
 }
 
 /*Issues page*/
-.application {
-    width: 100vw;
-    height: 100%;
-    position: relative;
-    margin-left: -180px;
-    margin-right: 10px;
-    margin-bottom: 220px;
-}
 
 .education {
     background-color: #285e8e;
@@ -159,14 +151,21 @@ h3 {
     color: white;
 }
 
-/*Contact page*/
-#contact {
-    height: 900px;
+.chart-wrapper{
+    background-color: #ac2925;
+    border-radius: 10px;
+    text-align: center;
+    color: #E0E0E0;
+    font-size: 1.5em;
 }
 
+.chart{
+    margin-bottom: 20px;
+}
+
+/*Contact page*/
 fieldset {
-    width: 600px;
-    margin: auto;
+    margin: 0 auto;
     border: 1px solid #999;
     border-radius: 20px;
     padding: 20px;
@@ -276,82 +275,342 @@ address {
     color: #EDEFF1;
 }
 
-/* Large desktops and laptops */
+/* Large desktops and laptops css specific properties col-lg-*/
 @media (min-width: 1200px) {
 
+    .landmarkDiv {
+        height: 600px;
+    }
+
+    .jumbotron {
+        margin-top: 160px;
+    }
+
+    .stateAbout {
+        margin-top: 160px;
+    }
+
+    .aboutMe {
+        height: 700px;
+    }
+
+    .education {
+        margin-top: 160px;
+    }
+
+    .application {
+        height: 1000px;
+    }
+
+    #contactDiv {
+        height: 900px;
+    }
+
 }
 
-/* Landscape tablets and medium desktops */
+/* Landscape tablets and medium desktops css specific properties col-md-*/
 @media (min-width: 992px) and (max-width: 1199px) {
 
+    .landmarkDiv {
+        height: 600px;
+    }
+
+    .jumbotron {
+        margin-top: 160px;
+    }
+
+    .stateAbout {
+        margin-top: 160px;
+    }
+
+    .aboutMe {
+        height: 1200px;
+    }
+
+    .education {
+        margin-top: 160px;
+    }
+
+    .application{
+        height: 1050px;
+    }
+
+    #contactDiv {
+        margin-top: 160px;
+        height: 1000px;
+    }
 }
 
-/* Portrait tablets and small desktops */
+/* Portrait tablets and small desktops css specific properties col-sm-*/
 @media (min-width: 768px) and (max-width: 991px) {
 
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .well {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Home page */
+    .landmarkDiv {
+        height: 600px;
+    }
+
+    .jumbotron {
+        margin-top: 160px;
+    }
+
+    .state{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .stateAbout {
+        margin-top: 160px;
+        width: 100%;
+    }
+
+    /* About page */
+    .aboutMe {
+        height: 600px;
+    }
+
+    .img-circle {
+        margin-bottom: 10px;
+    }
+
+    .img-thumbnail {
+        margin-bottom: 10px;
+    }
+
+    .education {
+        margin-top: 160px;
+    }
+
+    .application {
+        height: 1100px;
+    }
+
+    /* Contact page */
+    #contactDiv {
+        margin-top: 160px;
+        height: 1000px;
+    }
 }
 
-/* Landscape phones and portrait tablets */
+/* Landscape phones and portrait tablets css specific properties col-xs */
 @media (max-width: 767px) {
+
+    /* Hidden nav-brand logo for mobiles */
+    #nevadaBrand {
+        display: none;
+    }
+
+    /* Header */
+    header {
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    /* Navigation */
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    .navbar-toggle .icon-bar {
+        background-color: #ac2925;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Home page */
+    .landmarkDiv {
+        height: 1600px;
+    }
+
+    .well {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* About page */
+    .aboutMe {
+        height: 1960px;
+    }
+
+    .state{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .stateAbout {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Issues page */
+    .application {
+        height: 1800px;
+    }
+
+    /* Contact page */
+    #contactDiv {
+        height: 1160px;
+    }
+
+    #contactDiv {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #contact {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Images 100% on mobiles */
+    .img-thumbnail {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .img-circle {
+        width: 100%;
+        margin: 10px;
+    }
+
+    /* Decrease font-size for footer information*/
+    footer {
+        font-size: 10px;
+        height: 160px;
+    }
+
+    /* Decrease sizing of elements inside footer div*/
+    .footer h3 {
+        font-size: 12px;
+    }
+
+    .social li a i {
+        font-size: 10px;
+    }
+
+    .social li {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+    }
 
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
     /*Setup for mobile first response*/
-    
     /* Increase height background for header information*/
-    header{
+    header {
         height: 80px;
         margin: 0 auto;
     }
+
     /* Hidden nav-brand logo for mobiles */
-    #nevadaBrand{
+    #nevadaBrand {
         display: none;
     }
+
     /* Navigation */
-    nav ul{
+    nav ul {
         text-align: center;
     }
-    nav ul li{
+
+    nav ul li {
         text-align: center;
     }
-    .navbar-toggle .icon-bar{
+
+    .navbar-toggle .icon-bar {
         background-color: #ac2925;
     }
-    .container{
+
+    .container {
         width: 100%;
         margin: 0 auto;
     }
-    .state{
+
+    .well {
         width: 100%;
         margin: 0 auto;
     }
-    .well{
-        width: 100%;
-        margin: 0 auto;
-    }
-    /* Landmark DIV increase height */
+
+    /* Home page */
     .landmarkDiv {
-    height: 1400px;
+        height: 1400px;
     }
+
     /* Images 100% on mobiles */
-    .img-thumbnail{
+    .img-thumbnail {
         width: 100%;
-        display: block;
+        margin-bottom: 10px;
     }
+
+    .img-circle {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* About page */
+    .aboutMe {
+        height: 1400px;
+    }
+
+    .stateAbout {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Issues page */
+    .application {
+        height: 1600px;
+    }
+
+    /* Contact page */
+    #contactDiv {
+        height: 1200px;
+    }
+
+    #contactDiv {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #contact {
+        width: 100%;
+        margin: 0 auto;
+    }
+
     /* Decrease font-size for footer information*/
-    footer{
+    footer {
         font-size: 10px;
+        height: 160px;
     }
+
     /* Decrease sizing of elements inside footer div*/
-    .footer h3{
+    .footer h3 {
         font-size: 12px;
     }
+
     .social li a i {
         font-size: 10px;
     }
-    .social li{
+
+    .social li {
         height: 30px;
         width: 30px;
         line-height: 30px;

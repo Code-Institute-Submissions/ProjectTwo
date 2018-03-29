@@ -2,72 +2,76 @@
 {% block content %}
     <div class="container-fluid">
         <div class="row">
-            <h2>Reach out to us and we'll be back in touch shortly.</h2><br>
-            <form action="" onsubmit="correctForm()" class="form-horizontal" id="contact">
-                <fieldset>
-                    <legend><h2>Contact</h2></legend>
-                    <form class="form-inline">
-                        <div class="form-group">
-                            <label for="fName" class="control-label col-sm-2 field">First Name:</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" name="fName" id="fName" required autofocus
-                                       placeholder="Enter first name">
-                            </div>
-                        </div>
+            <div id="contactDiv">
+                <h2>Reach out to us and we'll be back in touch shortly.</h2><br>
+                <form action="" onsubmit="correctForm()" class="form-horizontal" id="contact">
+                    <fieldset>
+                        <legend><h2>Contact</h2></legend>
                         <form class="form-inline">
                             <div class="form-group">
-                                <label for="lName" class="control-label col-sm-2 field">Last Name:</label>
+                                <label for="fName" class="control-label col-sm-2 field">First Name:</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" name="lName" id="lName" required
-                                           placeholder="Enter last name">
+                                    <input type="text" class="form-control" name="fName" id="fName" required autofocus
+                                           placeholder="Enter first name">
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="Email" class="control-label col-sm-2 field">Email:</label>
-                                <div class="col-sm-10">
-                                    <input type="email" class="form-control" name="email" id="Email" required
-                                           placeholder="Enter email">
+                            <form class="form-inline">
+                                <div class="form-group">
+                                    <label for="lName" class="control-label col-sm-2 field">Last Name:</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="lName" id="lName" required
+                                               placeholder="Enter last name">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="age" class="control-label col-sm-2">Age:</label>
-                                <div class="col-sm-10">
-                                    <input type="number" class="form-control" name="age" min="18" max="120" value="18">
+                                <div class="form-group">
+                                    <label for="Email" class="control-label col-sm-2 field">Email:</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" name="email" id="Email" required
+                                               placeholder="Enter email">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="tel" class="control-label col-sm-2">Mobile:</label>
-                                <div class="col-sm-10">
-                                    <input type="tel" class="form-control" name="tel" required
-                                           placeholder="Enter mobile number"
-                                           pattern="[0-9]{11}" maxlength="11" title="Mobile Number 07***********">
+                                <div class="form-group">
+                                    <label for="age" class="control-label col-sm-2">Age:</label>
+                                    <div class="col-sm-10">
+                                        <input type="number" class="form-control" name="age" min="18" max="120"
+                                               value="18">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="gender" class="control-label col-sm-2 field">Gender:</label>
-                                <div class="col-sm-10">
-                                    <select name="gender" id="gender">
-                                        <option value="male">Male</option>
-                                        <option value="female">Female</option>
-                                        <option value="other">Other</option>
-                                    </select>
+                                <div class="form-group">
+                                    <label for="tel" class="control-label col-sm-2">Mobile:</label>
+                                    <div class="col-sm-10">
+                                        <input type="tel" class="form-control" name="tel" required
+                                               placeholder="Enter mobile number"
+                                               pattern="[0-9]{11}" maxlength="11" title="Mobile Number 07***********">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="info" class="control-label col-sm-2 field">Enquiry:</label>
-                                <div class="col-sm-10">
+                                <div class="form-group">
+                                    <label for="gender" class="control-label col-sm-2 field">Gender:</label>
+                                    <div class="col-sm-10">
+                                        <select name="gender" id="gender">
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="info" class="control-label col-sm-2 field">Enquiry:</label>
+                                    <div class="col-sm-10">
                             <textarea class="form-control" rows="3" name="info"
                                       placeholder="Enter information"></textarea><br>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-offset-2 col-sm-10">
-                                    <button type="submit" value="Submit" class="btn btn-primary btn-lg">Submit</button>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" value="Submit" class="btn btn-primary btn-lg">Submit
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                        </form>
-                </fieldset>
-            </form>
+                            </form>
+                    </fieldset>
+                </form>
+            </div>
             <div class="container">
                 <div id="alert" class="alert alert-info"></div>
             </div>
