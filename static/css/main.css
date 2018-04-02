@@ -135,7 +135,7 @@ img {
 /*Issues page*/
 
 .education {
-    background-color: #285e8e;
+    background-color: #2a6496;
     opacity: 0.8;
     border-radius: 10px 10px 10px 10px;
     padding: 20px;
@@ -435,7 +435,7 @@ address {
 
     /* Home page */
     .landmarkDiv {
-        height: 1600px;
+        height: 2000px;
     }
 
     .well {
@@ -551,7 +551,7 @@ address {
 
     /* Home page */
     .landmarkDiv {
-        height: 1400px;
+        height: 1500px;
     }
 
     /* Images 100% on mobiles */
@@ -611,8 +611,8 @@ address {
     }
 
     .social li {
-        height: 30px;
-        width: 30px;
-        line-height: 30px;
+        height: 20px;
+        width: 20px;
+        line-height: 18px;
     }
 }

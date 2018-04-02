@@ -2,6 +2,7 @@ $(document).ready(function () {
     //JS for education header to toggle P element
     $(".ed").click(function () {
         $(".edPara").slideToggle("slow");
+        $(".stateLi").slideToggle("slow");
     });
     //will add red to h_line classes
     $("#h_line").hover(function () {

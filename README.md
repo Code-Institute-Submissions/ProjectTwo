@@ -2,7 +2,8 @@
 
 ## Overview
 ### What is ths app for?
-This is my project two application. It is a website created for a Governor elect for US state Nevada which uses a backend database and displays data using filters.
+This is my project two application. It is a website created for a Governor elect for US state Nevada which uses a backend database and displays data using filters. This is used to promote the candidate for election. The main idea involves
+- The education page, the user will filter two Nevada versions that will highlight the need for funding. They can also compare the results with two other states and see results on screen. 
 ### What does it do?
 This app will show images and information for the campaign and focus on education funding using a database (school donations data), this will allow users to fill in a contact form and filter a database and display the information.
 ### How does it work?
@@ -10,10 +11,14 @@ The app has been created using flask and uses a noSQL database from a third part
 ## Features
 
 ### Existing Features
-- Database used has been altered to reflect information i want to show users by adding new data, removing old data, amending data to fit my needs.
+- Database used has been altered to reflect information i want to show users by adding new data, removing old data, amending data to fit my requirements.
+- When pressing on the education header line, more information will slide toggle and it to the user.
+- The contact form has validation requirements and JS alert once the user has completed the form correctly.
+- Images will change styling when hovered over
+- Buttons on About page will show more information when pressed.
 
 ### Features Left to Implement
-- Extra form css validation
+- Extra graph formats to be added to showcase campaign
 ## Tech Used
 ### This Includes:
 - [Flask](http://flask.pocoo.org/)
@@ -33,12 +38,19 @@ The app has been created using flask and uses a noSQL database from a third part
 - [Heroku](https://www.heroku.com/)
     - **Heroku** used to showcase the application
 ## Testing
+### Responsiveness
+With bootstrap formatting i have configured the website to work on various screens using breakpoints.
 ### Browsers
-    - Safari
-    - Chrome
-    - Firefox
-    - Internet Explorer
+Tested using the below browsers available
+- Safari
+- Chrome 
+- Firefox 
+- Internet Explorer
+- IE Edge
     
-## Contributing
+## Contribution
+- Images were sourced from google
+- Social button styling was sourced from a third party but has been amended to suit my app.
+
 ### Instructions
-    - To be written
+- To be written
