@@ -1,9 +1,14 @@
 from flask import Flask
 from flask import render_template
 from pymongo import MongoClient
+import os
 import json
 
 app = Flask(__name__)
+
+# Setup for loading database via Heroku
+MONGO_URI = os.getenv('MONGODB_URI', 'mongodb://localhost:27017')
+DBS_NAME = os.getenv('MONGO_DB_NAME', 'donorUSA')
 
 # MongoDB setup
 MONGODB_HOST = 'localhost'
@@ -42,7 +47,8 @@ def donor_projects():
 
     # Open a connection to MongoDB using a with statement such that the
     # connection will be closed as soon as we exit the with statement
-    with MongoClient(MONGODB_HOST, MONGODB_PORT) as conn:
+    # The MONGO_URI connection is required when hosted using a remote mongo db.
+    with MongoClient(MONGO_URI) as conn:
         # Define which collection we wish to access
         collection = conn[DBS_NAME][COLLECTION_NAME]
         # Retrieve a result set only with the fields defined in FIELDS
