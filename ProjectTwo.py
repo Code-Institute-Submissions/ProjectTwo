@@ -1,7 +1,7 @@
+import os
 from flask import Flask
 from flask import render_template
 from pymongo import MongoClient
-import os
 import json
 
 app = Flask(__name__)
@@ -9,12 +9,13 @@ app = Flask(__name__)
 # Setup for loading database via Heroku
 MONGO_URI = os.getenv('MONGODB_URI', 'mongodb://localhost:27017')
 DBS_NAME = os.getenv('MONGO_DB_NAME', 'donorUSA')
-
-# MongoDB setup
-MONGODB_HOST = 'localhost'
-MONGODB_PORT = 27017
-DBS_NAME = 'donorUSA'
 COLLECTION_NAME = 'projects'
+
+# # MongoDB setup
+# MONGODB_HOST = 'localhost'
+# MONGODB_PORT = 27017
+# DBS_NAME = 'donorUSA'
+# COLLECTION_NAME = 'projects'
 
 # Flask Home page.
 @app.route('/')
