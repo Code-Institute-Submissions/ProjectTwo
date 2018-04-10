@@ -11,12 +11,6 @@ MONGO_URI = os.getenv('MONGODB_URI', 'mongodb://localhost:27017')
 DBS_NAME = os.getenv('MONGO_DB_NAME', 'donorUSA')
 COLLECTION_NAME = 'projects'
 
-# # MongoDB setup
-# MONGODB_HOST = 'localhost'
-# MONGODB_PORT = 27017
-# DBS_NAME = 'donorUSA'
-# COLLECTION_NAME = 'projects'
-
 # Flask Home page.
 @app.route('/')
 def home():
@@ -27,6 +21,7 @@ def home():
 def about():
     return render_template('about.html')
 
+# Flask Issues page.
 @app.route('/issues')
 def issues():
     return render_template('issues.html')
@@ -57,6 +52,11 @@ def donor_projects():
         projects = collection.find(projection=FIELDS, limit=55000)
         # Convert projects to a list in a JSON object and return the JSON data
         return json.dumps(list(projects))
+
+# Flask Coming Soon page.
+@app.route('/comingsoon')
+def comingsoon():
+    return render_template('comingsoon.html')
 
 # Flask Contact page
 @app.route('/contact')

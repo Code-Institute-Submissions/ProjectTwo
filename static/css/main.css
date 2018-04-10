@@ -76,6 +76,12 @@ h3 {
     padding: 10px;
 }
 
+.issueP {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+}
+
 .stateLi {
     color: #4cae4c;
     font-size: 15px;
@@ -290,6 +296,10 @@ address {
         margin-top: 160px;
     }
 
+    .issues {
+        margin-top: 160px;
+    }
+
     .aboutMe {
         height: 700px;
     }
@@ -300,6 +310,10 @@ address {
 
     .application {
         height: 1000px;
+    }
+
+    .coming {
+        margin-top: 160px;
     }
 
     #contactDiv {
@@ -327,12 +341,20 @@ address {
         height: 1200px;
     }
 
+    .issues {
+        margin-top: 160px;
+    }
+
     .education {
         margin-top: 160px;
     }
 
     .application{
         height: 1050px;
+    }
+
+    .coming {
+        margin-top: 160px;
     }
 
     #contactDiv {
@@ -386,12 +408,20 @@ address {
         margin-bottom: 10px;
     }
 
+    .issues {
+        margin-top: 160px;
+    }
+
     .education {
         margin-top: 160px;
     }
 
     .application {
         height: 1100px;
+    }
+
+    .coming {
+        margin-top: 160px;
     }
 
     /* Contact page */
@@ -458,17 +488,25 @@ address {
         margin: 0 auto;
     }
 
-    /* Issues page */
+    /* Issues page*/
+    .issues {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Education page */
     .application {
         height: 1800px;
+    }
+
+    .coming {
+        width: 100%;
+        margin: 0 auto;
     }
 
     /* Contact page */
     #contactDiv {
         height: 1160px;
-    }
-
-    #contactDiv {
         width: 100%;
         margin: 0 auto;
     }
@@ -576,8 +614,18 @@ address {
     }
 
     /* Issues page */
+    .issues {
+        width: 100%;
+        margin: 0 auto;
+    }
+
     .application {
         height: 1600px;
+    }
+
+    .coming {
+        width: 100%;
+        margin: 0 auto;
     }
 
     /* Contact page */
