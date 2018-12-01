@@ -57,7 +57,7 @@ Tested using the below browsers available
 - Download files from repository with requirements.txt which will have libraries used on project.
 
 ### Hosting - web application has been hosted on **Heroku**
-- Created app using Heroku on web and add Herokupostgres database
+- Created app using Heroku on web and add MLab MongoDB database
 - Changes to config vars on Heroku.
 - Install on CLI `gunicorn` update requirements.txt
 - Create Procfile to allow `Heroku` know this is a Flask application
