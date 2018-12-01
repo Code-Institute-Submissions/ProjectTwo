@@ -62,6 +62,9 @@ Tested using the below browsers available
 - Install on CLI `gunicorn` update requirements.txt
 - Create Procfile to allow `Heroku` know this is a Flask application
 
+### Demo
+- A demo of this project is [stream-two-project](https://fathomless-lake-51971.herokuapp.com/)
+
 ## Contribution
 - Images were sourced from google
 - Social button styling was sourced from a third party but has been amended to suit my app.
