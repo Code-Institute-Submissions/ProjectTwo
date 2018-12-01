@@ -19,6 +19,7 @@ The app has been created using flask and uses a noSQL database from a third part
 
 ### Features Left to Implement
 - Extra graph formats to be added to showcase campaign
+
 ## Tech Used
 ### This Includes:
 - [Flask](http://flask.pocoo.org/)
@@ -37,9 +38,11 @@ The app has been created using flask and uses a noSQL database from a third part
     - **Crossfilter** used to view large datasets.
 - [Heroku](https://www.heroku.com/)
     - **Heroku** used to showcase the application
+
 ## Testing
 ### Responsiveness
 With bootstrap formatting i have configured the website to work on various screens using breakpoints.
+
 ### Browsers
 Tested using the below browsers available
 - Safari
@@ -47,10 +50,21 @@ Tested using the below browsers available
 - Firefox 
 - Internet Explorer
 - IE Edge
-    
+
+## Deployment
+### Local - How to run this site locally.
+- Open CLI and `pip3 install flask`
+- Download files from repository with requirements.txt which will have libraries used on project.
+
+### Hosting - web application has been hosted on **Heroku**
+- Created app using Heroku on web and add Herokupostgres database
+- Changes to config vars on Heroku.
+- Install on CLI `gunicorn` update requirements.txt
+- Create Procfile to allow `Heroku` know this is a Flask application
+
 ## Contribution
 - Images were sourced from google
 - Social button styling was sourced from a third party but has been amended to suit my app.
 
-### Instructions
-- To be written
+## Author
+William Russell
