@@ -3,13 +3,13 @@
 ## Overview
 ### What is ths app for?
 This is my project two application. It is a website created for a Governor elect for US state Nevada which uses a backend database and displays data using filters. This is used to promote the candidate for election. The main idea involves
-- The education page, the user will filter two Nevada versions that will highlight the need for funding. They can also compare the results with two other states and see results on screen. 
+- The [education](templates/education.html) page, the user will filter two Nevada versions that will highlight the need for funding. They can also compare the results with two other states and see results on screen. 
+
 ### What does it do?
 This app will show images and information for the campaign and focus on education funding using a database (school donations data), this will allow users to fill in a contact form and filter a database and display the information.
 ### How does it work?
 The app has been created using flask and uses a noSQL database from a third party. This is hosted on Heroku and styled using Bootstrap, the mongo database uses various javascript frameworks to filter and display the data.
 ## Features
-
 ### Existing Features
 - Database used has been altered to reflect information i want to show users by adding new data, removing old data, amending data to fit my requirements.
 - When pressing on the education header line, more information will slide toggle and it to the user.
@@ -17,8 +17,12 @@ The app has been created using flask and uses a noSQL database from a third part
 - Images will change styling when hovered over
 - Buttons on About page will show more information when pressed.
 
-### Features Left to Implement
-- Extra graph formats to be added to showcase campaign
+## UX
+- An EXPERT user will use this site to view information that is displayed to the browser, they will use filtration for specific needs.
+- A LOWEND user will have an interest in the users website and view policies they mention and perhaps want to contact the candidate.
+
+### Wireframes
+- Please see [Wireframes](wireframes/) directory for images of screen layout plan and feel for site information.
 
 ## Tech Used
 ### This Includes:
